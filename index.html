@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Eternal Elegance Inn</title>
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener('scroll', () =>{
+            const navbar = document.querySelector('.navbar');
+            const content = document.querySelector('.content');
+            const scrollPos = window.scrollY;
+
+            // change opacity of navbar when scroll position on class named content
+            if(scrollPos > content.offsetTop - navbar.clientHeight){
+                navbar.style.opacity = '1';
+            } else {
+                navbar.style.opacity = '0.8';
+            }
+        });
+    </script>
+    <nav class="navbar">
+        <h1>Eternal Elegance Inn</h1>
+        <div class="menu">
+            <a href="index.html">HOME</a>
+            <a href="accommodation.html">ACCOMMODATION</a>
+            <a href="dining&bar.html">DINING & BAR</a>
+            <a href="reservation.php">RESERVATION</a>
+        </div>
+    </nav>
+    <div class="background">
+        <img src="asset/Home background.png" alt="">
+    </div>
+    <div class="content">
+        <div class="welcome">
+            <h1>Welcome to Eternal Elegance Inn</h1>
+            <p class="subtitle">Where Luxury Meets Tranquility in Every Stay</p>
+            <div class="text">
+                <p>
+                    Welcome to Eternal Elegance Inn, an exquisite retreat where the art of hospitality takes center
+                    stage.
+                    We are thrilled to welcome you to our haven of refined luxury, where every detail is meticulously
+                    crafted to ensure your stay surpasses all expectations. From the moment you step through our doors,
+                    you'll be immersed in an atmosphere of sophistication and tranquility, setting the stage for a truly
+                    memorable experience.
+                </p>
+                <p>
+                    At Eternal Elegance Inn, we pride ourselves on delivering unparalleled comfort and personalized
+                    service.
+                    Whether you're here for a leisurely escape or a business rendezvous, our sumptuously designed rooms
+                    and
+                    world-class amenities await to elevate your stay. Embrace the allure of Eternal Elegance Inn, where
+                    each
+                    visit is an invitation to savor the harmonious blend of opulence and relaxation. Welcome to a world
+                    where lasting memories are made, and your comfort is our utmost priority.
+                </p>
+            </div>
+            <center><div class="border"></div></center>
+        </div>
+        <div class="accommodation">
+            <h1>Accommodation</h1>
+            <p class="subtitle">5 Stars Luxury Meets Sophisticated Design</p>
+            <div class="text">
+                <p>
+                    Behind of the luxury, Eternal Elegance Inn features 300 guest room and suites accommodation for a
+                    luxury experience beyond compare.
+                </p>
+            </div>
+            <div class="list">
+                <div class="box">
+                    <center><img src="asset/Basic suite.png" alt=""></center>
+                    <p class="room">Basic Suite</p>
+                    <p class="desc">
+                        Comfort meets affordability in our Basic Suite, a cozy retreat with essential amenities, perfect
+                        for
+                        those who appreciate simplicity without sacrificing style.
+                    </p>
+                    <center><a href="reservation.php">Book now</a></center>
+                </div>
+                <div class="box">
+                    <center><img src="asset/Executive suite.png" alt=""></center>
+                    <p class="room">Executive Suite</p>
+                    <p class="desc">
+                        Elevated comfort for business travelers, our Executive Suite seamlessly blends luxury with
+                        functionality, offering a spacious retreat and personalized services.
+                    </p>
+                    <center><a href="reservation.php">Book now</a></center>
+                </div>
+                <div class="box">
+                    <center><img src="asset/Presidential suite.png" alt=""></center>
+                    <p class="room">Presidential Suite</p>
+                    <p class="desc">
+                        Step into opulence with our Presidential Suite, a top-tier accommodation featuring a
+                        spacious living room, lavish bedroom, and exclusive services for an unforgettable stay.
+                    </p>
+                    <center><a href="reservation.php">Book now</a></center>
+                </div>
+            </div>
+            <div class="list">
+                <div class="box">
+                    <center><img src="asset/Penthouse suite.png" alt=""></center>
+                    <p class="room">Penthouse Suite</p>
+                    <p class="desc">
+                        Ascend to the pinnacle of luxury in our Penthouse Suite, a sprawling retreat on the
+                        highest floor with breathtaking views, expansive living areas, and bespoke furnishings.
+                    </p>
+                    <center><a href="reservation.php">Book now</a></center>
+                </div>
+            </div>
+            <center><div class="border"></div></center>
+        </div>
+        <div class="dining">
+            <div class="image">
+                <img src="asset/Eternal Restaurant.png" alt="">
+            </div>
+            <div class="text-dining">
+                <h1>Dining & Bar</h1>
+                <p>
+                    Welcome to Eternal Elegance Inn's Dining & Bar, where world-class chefs craft an extraordinary culinary 
+                    journey in a setting seamlessly blending timeless charm with contemporary allure. Indulge 
+                    in a curated menu for romantic dinners or celebratory feasts. Elevate your spirits at the 
+                    Elegant Bar, offering premium spirits and handcrafted cocktails in a sophisticated 
+                    ambiance. Experience exceptional dining and bar offerings at Eternal Elegance Inn, 
+                    where every moment is an indulgence in the extraordinary.
+                </p>
+                <a href="dining&bar.html" class="button">Find out more</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="link">
+            <p class="copyright">Eternal Elegance Inn &copy; 2023</p>
+            <a class="link2" href="">Facebook</a>
+            <a class="link2" href="" style="margin-left: 3vw; margin-right: 3vw;">Instagram</a>
+            <a class="link2" href="">Twitter</a>
+        </div>
+    </footer>
+</body>
+</html>
